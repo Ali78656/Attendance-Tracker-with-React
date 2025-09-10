@@ -1,0 +1,59 @@
+body {
+  transition: background 0.3s, color 0.3s;
+  background: #7293b4;}   
+
+.app-container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.5s ease-in-out;
+  background: #fff;
+  color: #000;
+}
+
+.app-container.dark-mode {
+  background: #333;
+  color: #fff;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.content {
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.title {
+  text-align: center;
+}
+
+.theme-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px auto;
+  padding: 10px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.2s;
+  width: 40px;
+  height: 40px;
+}
+
+.theme-toggle:hover {
+  transform: scale(1.1);
+}
